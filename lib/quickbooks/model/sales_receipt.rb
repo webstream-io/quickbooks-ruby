@@ -37,7 +37,6 @@ module Quickbooks
       xml_accessor :print_status, :from => 'PrintStatus'
       xml_accessor :balance, :from => 'Balance', :as => BigDecimal, :to_xml => to_xml_big_decimal
 
-      xml_accessor :custom_fields, :from => 'CustomField', :as => [CustomField]
       xml_accessor :department_ref, :from => 'DepartmentRef', :as => BaseReference
       xml_accessor :linked_transactions, :from => 'LinkedTxn', :as => [LinkedTransaction]
       xml_accessor :txn_tax_detail, :from => 'TxnTaxDetail', :as => TransactionTaxDetail
